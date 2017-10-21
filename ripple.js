@@ -9,10 +9,13 @@ class Ripple {
 	
 draw() {
   noFill();
+	var c = color(random(0, 255), random(0, 255), random(0, 255));  // Define color 'c'
+	stroke(c);
   ellipse(this.px, this.py, this.diam);
+	
   this.diam = this.diam + 1;
 	
-  }	
+  }		
 	
 }
 
